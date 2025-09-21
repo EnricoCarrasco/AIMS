@@ -1,15 +1,16 @@
 # Shift Scheduling Application - PRD
 
 ## Overview
-A web-based shift scheduling application that helps business scheduling managers create compliant facility-based and event-based schedules efficiently. Sold B2B to business owners who provide access to their scheduling staff.
+A web-based workforce scheduling platform for mid-sized organizations that streamlines completing weekly and monthly rosters for a single company. Scheduling managers work in a modern dashboard to automate or semi-automate schedule generation while enforcing hard compliance rules like minimum 11-hour rest periods and balancing soft preferences such as fair distribution of shifts.
 
 ## Target Users
-- **Primary**: Scheduling managers/supervisors who create employee schedules
-- **Secondary**: Business owners who purchase licenses
-- **End Goal**: Replace manual scheduling with automated, compliant schedule generation
+- **Primary**: Workforce managers, operations leads, and schedulers responsible for completing weekly or monthly rosters
+- **Secondary**: HR or labor-compliance administrators who ensure shifts comply with regulations and contracts
+- **Collaborators**: Department supervisors who supply coverage requirements and approve final rosters
+- **End Goal**: Complete accurate, compliant schedules quickly while keeping stakeholders aligned
 
 ## Core Value Proposition
-Transform 30-60 minute manual facility scheduling into <5 minute automated, compliant schedule creation with full coverage guarantees.
+Eliminate multi-hour manual scheduling by fully automating weekly and monthly roster generation, delivering compliant coverage plans in minutes while honoring both hard constraints and fairness preferences.
 
 ## MVP Features
 
@@ -50,20 +51,13 @@ Transform 30-60 minute manual facility scheduling into <5 minute automated, comp
 - Multi-facility overview to manage all locations simultaneously
 
 ### 4. Compliance Engine (Hard Rules)
-**Employee-Level Rules**
-- ≤1 shift per day per employee
-- 40-48 hours per week maximum
-- ≥11 hours rest between shifts
-- Availability/eligibility enforcement
-- Cross-facility restrictions (e.g., can't work at 2 locations same day)
-
-**Facility-Level Rules**
+**Employee-Level Rules**`r`n- Maximum one shift per employee per day`r`n- Enforce contracted weekly hour caps (40- or 48-hour limits)`r`n- Minimum 11 hours rest between shifts`r`n- Required days off: 40-hour employees receive 2 days off weekly; 48-hour employees must and may only take 1 day off weekly`r`n- Availability/eligibility enforcement`r`n- Cross-facility restrictions (e.g., can't work at 2 locations the same day)`r`n`r`n**Facility-Level Rules**
 - Minimum staffing requirements per shift (e.g., must have 2 employees minimum)
 - Role-based requirements (e.g., must have 1 supervisor per shift)
 - Skill/certification requirements (e.g., forklift certified for warehouse shifts)
 - Event-specific compliance (e.g., special training required for conference events)
 
-**System Features**
+**Soft Rules (Preferences)**`r`n- Distribute premium or undesirable shifts evenly across qualified employees`r`n- Prefer continuous days off when satisfying required rest periods and coverage needs`r`n`r`n**System Features**
 - Real-time violation warnings with visual indicators
 - Auto-suggestions for valid alternatives when conflicts occur
 - Bulk compliance checking across all facilities
@@ -108,27 +102,22 @@ Transform 30-60 minute manual facility scheduling into <5 minute automated, comp
 **Phase 1 (6-8 weeks)**: Core scheduling with compliance engine
 **Phase 2 (2-3 weeks)**: Employee notifications and view-only access
 **Phase 3 (2-3 weeks)**: Analytics dashboard and reporting features
-
 ## Use Case Examples
 
-### Restaurant Chain
-- **Setup**: 3 locations (Downtown, Mall, Airport), each with different shift patterns
-- **Requirements**: Each location needs 2 cooks + 3 servers + 1 manager per shift
-- **Challenge**: Weekend shifts need extra staff, some employees certified for multiple locations
-- **Solution**: Define facility-specific templates, auto-assign based on certifications and availability
+### Hotel Macedonia Pallas
+- 24/7 luxury hotel with three daily shifts: 06:00-14:00, 14:00-22:00, 22:00-06:00
+- Requires exactly two qualified employees on every shift across front desk, concierge, and night audit roles
+- Goal: Remove manual spreadsheet updates and guarantee compliant rest windows for staff rotating between day and night duty
 
-### Event Management Company
-- **Setup**: Simultaneous conferences requiring specialized staff
-- **Requirements**: Conference A needs 5 AV techs + 2 coordinators, Conference B needs 3 security + 4 hosts
-- **Challenge**: Staff with multiple certifications, events at different venues
-- **Solution**: Event-based scheduling with skill matching and venue assignments
+### Hospital Saint Loukas
+- High-acuity hospital operating 24/7 with three shifts: 07:00-15:00, 15:00-23:00, 23:00-07:00
+- Morning and afternoon shifts demand three clinicians each; overnight coverage can drop to two
+- Compliance engine must handle different staffing minima per shift type while honoring certification and rest rules
 
-### Retail Chain
-- **Setup**: 5 stores with varying sizes and customer traffic
-- **Requirements**: Large stores need 4 cashiers + 2 supervisors, small stores need 2 cashiers + 1 supervisor
-- **Challenge**: Holiday seasons require 50% more staff, employees prefer certain locations
-- **Solution**: Template-based scheduling with seasonal adjustments and preference optimization
-
+### Match Day Event Staffing
+- One-off sports match needing 50 event staff on a single 17:00-23:00 shift
+- Event treated as an additional facility so employees can be scheduled alongside their Hotel Macedonia Pallas or Saint Loukas assignments
+- Scheduling engine verifies that event shifts do not violate weekly hour caps, required days off, or continuous-rest preferences
 ## Business Model
 - License-based pricing per business location
 - Business owner purchases, assigns access to scheduling manager
@@ -142,3 +131,11 @@ Transform 30-60 minute manual facility scheduling into <5 minute automated, comp
 - Multi-location management
 - Advanced optimization algorithms
 - Integration with payroll systems
+
+
+
+
+
+
+
+
